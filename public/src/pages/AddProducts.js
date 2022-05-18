@@ -267,7 +267,6 @@ const AddProducts = () => {
                 <SelectedProductType
                   {...productTypeComponents[productType]["props"]}
                   invalid={invalid}
-                  productType={productType}
                 />
               )}
             </div>

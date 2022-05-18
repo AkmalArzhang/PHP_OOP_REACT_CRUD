@@ -27,13 +27,16 @@ const deleteProducts = async (ids) => {
       !Using POST instead of DELETE in case the server mod_security doesn't allow DELETE request
     */
 
-    const response = await api.post(`${products}/1`, data, headers);
+    //const response = await api.post(`${products}/1`, data, headers);
 
     /*
       !If the server allows the DELETE request or you are in localhost use the bellow code
     */
 
-    //const response = await api.delete(products, data, headers);
+    const response = await api.delete(products, {
+      headers: headers.headers,
+      data: data,
+    });
 
     return response;
   } catch (e) {
