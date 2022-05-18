@@ -1,0 +1,18 @@
+<Limit GET POST PUT OPTIONS DELETE PATCH HEAD>
+    Order allow,deny
+    Allow from all
+    Require all granted
+</Limit>
+
+<LimitExcept GET POST PUT OPTIONS DELETE PATCH HEAD>
+    Order deny,allow
+    Deny from all
+    Require all denied
+</LimitExcept>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} -f [OR]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule>
