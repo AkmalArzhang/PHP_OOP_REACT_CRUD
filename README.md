@@ -14,6 +14,7 @@ Clone the application or download it in your local file and put it in your desir
 
 ```php
 composer install
+composer dump-autoload
 ```
 
 - Serve the PHP project with the bellow command:
