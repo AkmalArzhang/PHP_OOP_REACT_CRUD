@@ -8,6 +8,7 @@ The App folder contains the backend PHP codes and the public folder contains the
 Clone the application or download it in your local file and put it in your desired environment (XAMPP, WAMPP, LAMPP);
 
 - Create a MYSQL database.
+- Upload the provided .sql file in this repository into your MYSQL database.
 - Copy .env.example into .env.
 - Change the .env file database parameters according to your database. As well as add your APP_URL without the http://.
 - CD to the directory and run the following commands to install dependencies:
