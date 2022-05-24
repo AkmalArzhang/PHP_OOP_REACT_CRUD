@@ -7,11 +7,6 @@ use App\Services\QueryHandler;
 
 class ProductsModel extends Products
 {
-    protected $tableName = 'products';
-    protected $idField = 'id';
-    protected $furnitures = 'furnitures';
-    protected $dvd_disc = 'dvd_disc';
-    protected $books = 'books';
     protected $productAvailableTypes;
 
     public function __construct()
