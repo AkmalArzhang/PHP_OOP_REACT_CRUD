@@ -9,11 +9,6 @@ class API
     public $routes = array();
     public $request_route = null;
 
-    public function __get($name)
-    {
-        return $this->$name;
-    }
-
     public function startHeaderAndRouter()
     {
         $this->header();
