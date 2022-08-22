@@ -1,4 +1,4 @@
-# About Scandiweb_Test_Assignment
+# About PHP_OOP_REACT_CRUD
 
 Scandiweb Test Assignment is a simple 2 page application designed with PHP as backend API and REACT as frontend.
 The App folder contains the backend PHP codes and the public folder contains the frontend REACT codes.
