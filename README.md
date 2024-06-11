@@ -33,10 +33,6 @@ npm start
 
 and visit URL: <http://localhost:3000>
 
-## Working Example
-
-Visit: https://scandiweb.arzhang.xyz/ 
-
 ## Troubleshooting
 
 - In case the react app didn't load data, please make sure to check api.js at public/src/services to make sure it is pointing to the correct api address.
